@@ -50,10 +50,10 @@ public class CustomEntity extends EntityZombie {
     public void updateAttributes() {
 
         // Parse %level% placeholder.
-        this.customDisplayName = this.customDisplayName.replaceAll("(?i)%level%", String.valueOf(this.level));
+        String customName = this.customDisplayName.replaceAll("(?i)%level%", String.valueOf(this.level));
 
         // Set the name
-        this.setCustomName(new ChatComponentText(StringUtil.color(this.customDisplayName)));
+        this.setCustomName(new ChatComponentText(StringUtil.color(customName)));
         this.setCustomNameVisible(true);
 
         // Update some other attributes.
