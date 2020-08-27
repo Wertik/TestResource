@@ -1,0 +1,8 @@
+name: ${project.name}
+version: ${project.version}
+main: ${project.groupId}.TestResourcePlugin
+authors: [Wertik1206]
+commands:
+  testresource:
+    aliases: [tr]
+    description: Main plugin command.
